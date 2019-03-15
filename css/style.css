@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "proxima-nova", "Helvetica Neue",Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-image: linear-gradient(#C6FFDD, #FBD786, #f7797d);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 16px;
+  transition: all 0.3s ease-in;
+}
+@media (max-width: 512px) {
+  body {
+    padding: 32px;
+    transition: all 0.3s ease-in;
+  }
+}
+@media (max-width: 360px) {
+  body {
+    padding: 16px;
+    transition: all 0.3s ease-in;
+  }
+}
+
+h1 {
+  text-align: center;
+  color: #017;
+  margin: 0 0 10px 0;
+}
+
+p {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 35px;
+  box-shadow: 2px 2px 96px #11111152;
+  border-radius: 8px;
+  transition: all 0.3s ease-in;
+}
+@media (max-width: 512px) {
+  .container {
+    padding: 32px;
+    transition: all 0.3s ease-in;
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    padding: 16px;
+    transition: all 0.3s ease-in;
+  }
+}
+
+label {
+  display: inline-block;
+  width: 30%;
+  min-width: 128px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+input, select {
+  display: inline-block;
+  background-color: #fff;
+  color: #888;
+  border: 1px solid #888;
+  border-radius: 6px;
+  height: 36px;
+  width: 100%;
+  font-size: 18px;
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+input:focus, select:focus {
+  background-color: #fff;
+  color: #3200ff;
+  border-color: #3200ff;
+  outline: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.payment {
+  color: #000;
+  font-size: 18px;
+  text-align: left;
+  transition: all 0.3s ease-in;
+}
+@media (max-width: 512px) {
+  .payment {
+    font-size: 40px;
+    transition: all 0.3s ease-in;
+  }
+}
+@media (max-width: 400px) {
+  .payment {
+    font-size: 32px;
+    transition: all 0.3s ease-in;
+  }
+}
+
+.payment_total {
+  color: #1c8946;
+  font-size: 20px;
+  text-align: left;
+  font-weight: bold;
+  transition: all 0.3s ease-in;
+}
+@media (max-width: 512px) {
+  .payment_total {
+    font-size: 40px;
+    transition: all 0.3s ease-in;
+  }
+}
+@media (max-width: 400px) {
+  .payment_total {
+    font-size: 32px;
+    transition: all 0.3s ease-in;
+  }
+}
+
+@media (max-height: 750px) {
+  body {
+    height: 100%;
+  }
+}

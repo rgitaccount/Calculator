@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Import Price Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://use.typekit.net/nxw4uqt.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div id="calculator">
+	<div class="container">
+		<form action="">
+			<h1>Calculator_3</h1>
+			<label for="price">Price in KRW</label>
+			<input type="number" name="price" class="currency" v-model.number="price"/>
+			<br/>
+			<label for="year">Year</label>
+			<select name="year" v-model="year">
+				<option value="12" selected> 2008 </option>
+				<option value="11">2009</option>
+				<option value="10">2010</option>
+				<option value="9">2011</option>
+				<option value="8">2012</option>
+				<option value="7">2013</option>
+				<option value="6">2014</option>
+				<option value="5">2015</option>
+				<option value="4">2016</option>
+				<option value="3">2017</option>
+				<option value="2">2018</option>
+				<option value="1">2019</option>
+			</select>
+			<br/>
+			
+			<label for="fuel">Fuel type</label>
+			<select name="fuel" v-model="fuel">
+				<option value="gas">Gasoline</option>
+				<option value="diesel">Diesel</option>
+				<option value="hybrid">Hybrid</option>
+				<option value="electric">EV</option>
+			</select>
+			
+			<label for="cc">Engine CC</label>
+			<input type="number" name="cc" class="currency" v-model.number="cc"/>
+			<br />
+			
+			<label for="freight" >Transportation</label>
+			<input type="number" name="freight" v-model.number="freight"/>			
+		</form>
+	
+	<table style="width:100%">
+  
+  <tr>
+    <td><div class="payment">Price in USD:</div></td>
+    <td><div class="payment">${{  price_new  }}</div></td>
+  </tr>
+	<tr>
+    <td><div class="payment">Transportation:</div></td>
+    <td><div class="payment">${{ transportation }}</div></td>
+  </tr>
+	<tr>
+		<td><div class="payment">Customs fee:</div></td>
+    <td><div class="payment">${{ custom_fee }}</div></td>
+  </tr>
+	<tr>
+    <td><div class="payment">Unloading:</div></td>
+    <td><div class="payment">${{ unloading }}</div></td>
+  </tr>
+	<tr>
+    <td><div class="payment">Registration fee:</div></td>
+    <td><div class="payment">${{ regfee }}</div></td>
+  </tr>
+	<tr>
+    <td><div class="payment">Tax:</div></td>
+    <td><div class="payment">${{ taxfee }}</div></td>
+  </tr>
+  	<tr>
+    <td><div class="payment_total">Total:</div></td>
+    <td><div class="payment_total">{{ total }}</div></td>
+  </tr>
+</table>
+	</div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
