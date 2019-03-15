@@ -8,6 +8,7 @@
 <script src="https://use.typekit.net/nxw4uqt.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
   
       <link rel="stylesheet" href="css/style.css">
@@ -23,6 +24,9 @@
 			<h1>Calculator_3</h1>
 			<label for="price">Price in KRW</label>
 			<input type="number" name="price" class="currency" v-model.number="price"/>
+			<br/>
+			<label for="rate">USD/KRW Rate</label>
+			<input type="number" name="rate" class="currency" v-model.number="rate"/>
 			<br/>
 			<label for="year">Year</label>
 			<select name="year" v-model="year">
